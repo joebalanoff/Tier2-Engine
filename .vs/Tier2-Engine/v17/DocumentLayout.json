@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Simon Balanoff\\Documents\\GitHub\\Tier2-Engine\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CF5EEE6B-D56C-42B5-A4C6-27441B67B2EA}|Tier2-Engine.vcxproj|C:\\Users\\Simon Balanoff\\Documents\\GitHub\\Tier2-Engine\\src\\engine\\gui\\gui_manager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{CF5EEE6B-D56C-42B5-A4C6-27441B67B2EA}|Tier2-Engine.vcxproj|solutionrelative:src\\engine\\gui\\gui_manager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CF5EEE6B-D56C-42B5-A4C6-27441B67B2EA}|Tier2-Engine.vcxproj|C:\\Users\\Simon Balanoff\\Documents\\GitHub\\Tier2-Engine\\src\\engine\\gui\\layout_manager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{CF5EEE6B-D56C-42B5-A4C6-27441B67B2EA}|Tier2-Engine.vcxproj|solutionrelative:src\\engine\\gui\\layout_manager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF5EEE6B-D56C-42B5-A4C6-27441B67B2EA}|Tier2-Engine.vcxproj|C:\\Users\\Simon Balanoff\\Documents\\GitHub\\Tier2-Engine\\src\\engine\\gui\\gui_manager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CF5EEE6B-D56C-42B5-A4C6-27441B67B2EA}|Tier2-Engine.vcxproj|solutionrelative:src\\engine\\gui\\gui_manager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF5EEE6B-D56C-42B5-A4C6-27441B67B2EA}|Tier2-Engine.vcxproj|C:\\Users\\Simon Balanoff\\Documents\\GitHub\\Tier2-Engine\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -34,18 +34,17 @@
               "RelativeToolTip": "src\\main.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-04-29T00:35:08.869Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T00:35:08.869Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "layout_manager.cpp",
               "DocumentMoniker": "C:\\Users\\Simon Balanoff\\Documents\\GitHub\\Tier2-Engine\\src\\engine\\gui\\layout_manager.cpp",
               "RelativeDocumentMoniker": "src\\engine\\gui\\layout_manager.cpp",
               "ToolTip": "C:\\Users\\Simon Balanoff\\Documents\\GitHub\\Tier2-Engine\\src\\engine\\gui\\layout_manager.cpp",
               "RelativeToolTip": "src\\engine\\gui\\layout_manager.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAeAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-29T04:06:19.285Z",
               "EditorCaption": ""
@@ -58,13 +57,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "gui_manager.cpp",
               "DocumentMoniker": "C:\\Users\\Simon Balanoff\\Documents\\GitHub\\Tier2-Engine\\src\\engine\\gui\\gui_manager.cpp",
               "RelativeDocumentMoniker": "src\\engine\\gui\\gui_manager.cpp",
               "ToolTip": "C:\\Users\\Simon Balanoff\\Documents\\GitHub\\Tier2-Engine\\src\\engine\\gui\\gui_manager.cpp",
               "RelativeToolTip": "src\\engine\\gui\\gui_manager.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAbAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-29T04:06:36.212Z",
               "EditorCaption": ""
