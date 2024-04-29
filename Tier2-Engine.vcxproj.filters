@@ -42,13 +42,13 @@
     <ClInclude Include="vendor\imgui-master\backends\imgui_impl_opengl3_loader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\engine\gui\gui_manager.h">
+    <ClInclude Include="src\gui\gui_manager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\engine\gui\layout_manager.h">
+    <ClInclude Include="src\gui\layout_manager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\engine\input.h">
+    <ClInclude Include="src\core\input.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -74,19 +74,19 @@
     <ClCompile Include="vendor\imgui-master\backends\imgui_impl_opengl3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\engine\gui\gui_manager.cpp">
+    <ClCompile Include="src\gui\gui_manager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\engine\gui\layout_manager.cpp">
+    <ClCompile Include="src\gui\layout_manager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\engine\input.cpp">
+    <ClCompile Include="src\core\input.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\engine\renderer.cpp">
+    <ClCompile Include="src\core\renderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\engine\renderer.h">
+    <ClCompile Include="src\core\renderer.h">
       <Filter>Header Files</Filter>
     </ClCompile>
     <ClCompile Include="src\main.cpp">

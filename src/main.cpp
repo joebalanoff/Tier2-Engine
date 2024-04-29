@@ -1,5 +1,5 @@
-#include "engine/renderer.h"
-#include "engine/input.h"
+#include "core/renderer.h"
+#include "core/input.h"
 
 int main() {
 	Renderer renderer;
@@ -18,8 +18,6 @@ int main() {
 		glfwSwapBuffers(window);
 		glfwPollEvents();
 	}
-
-	renderer.shutdown();
 
 	return 0;
 }
