@@ -115,7 +115,7 @@
       <AdditionalIncludeDirectories>$(SolutionDir)\vendor\imgui;$(SolutionDir)\vendor\glm;$(SolutionDir)\vendor\imgui\backends;$(SolutionDir)\vendor\glfw-3.4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)\vendor\glfw-3.4\lib-vc2022;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>glfw3.lib;opengl32.lib;user32.lib;gdi32.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -132,7 +132,7 @@
       <AdditionalIncludeDirectories>$(SolutionDir)\vendor\imgui;$(SolutionDir)\vendor\glm;$(SolutionDir)\vendor\imgui\backends;$(SolutionDir)\vendor\glfw-3.4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -141,9 +141,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\core\application.h" />
+    <ClInclude Include="src\core\base.h" />
+    <ClInclude Include="src\core\layer.h" />
+    <ClInclude Include="src\core\layer_stack.h" />
+    <ClInclude Include="src\core\window.h" />
     <ClInclude Include="src\gui\gui_manager.h" />
+    <ClInclude Include="src\gui\imgui\im_gui_layer.h" />
     <ClInclude Include="src\gui\layout_manager.h" />
-    <ClInclude Include="src\core\input.h" />
+    <ClInclude Include="src\main.cpp" />
+    <ClInclude Include="src\platform\windows_window.h" />
     <ClInclude Include="vendor\imgui\backends\imgui_impl_glfw.h" />
     <ClInclude Include="vendor\imgui\backends\imgui_impl_opengl3.h" />
     <ClInclude Include="vendor\imgui\backends\imgui_impl_opengl3_loader.h" />
@@ -155,12 +162,14 @@
     <ClInclude Include="vendor\imgui\imstb_truetype.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\core\application.cpp" />
+    <ClCompile Include="src\core\layer.cpp" />
+    <ClCompile Include="src\core\layer_stack.cpp" />
+    <ClCompile Include="src\core\window.cpp" />
     <ClCompile Include="src\gui\gui_manager.cpp" />
+    <ClCompile Include="src\gui\imgui\im_gui_layer.cpp" />
     <ClCompile Include="src\gui\layout_manager.cpp" />
-    <ClCompile Include="src\core\input.cpp" />
-    <ClCompile Include="src\core\renderer.cpp" />
-    <ClCompile Include="src\core\renderer.h" />
-    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\platform\windows_window.cpp" />
     <ClCompile Include="vendor\imgui\backends\imgui_impl_glfw.cpp" />
     <ClCompile Include="vendor\imgui\backends\imgui_impl_opengl3.cpp" />
     <ClCompile Include="vendor\imgui\imgui.cpp" />

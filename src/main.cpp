@@ -1,23 +1,12 @@
-#include "core/renderer.h"
-#include "core/input.h"
+#include "core/application.h"
 
 int main() {
-	Renderer renderer;
-	if (!renderer.init()) {
-		return -1;
-	}
+	Tier2::ApplicationSpecification spec;
+	spec.name = "Tier2";
 
-	GLFWwindow* window = renderer.getWindow();
-	Input input(window);
+	Tier2::Application* app = new Tier2::Application(spec);
 
-	while (!glfwWindowShouldClose(window)) {
-		input.processInput();
+	app->Run();
 
-		renderer.render();
-
-		glfwSwapBuffers(window);
-		glfwPollEvents();
-	}
-
-	return 0;
+	delete app;
 }
