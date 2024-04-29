@@ -1,22 +1,7 @@
 ﻿  gui_manager.cpp
   layout_manager.cpp
-C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\src\engine\gui\gui_manager.h(21,15): error C2143: syntax error: missing ';' before '*'
-  (compiling source file 'src/engine/gui/layout_manager.cpp')
-  
-C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\src\engine\gui\gui_manager.h(21,15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-  (compiling source file 'src/engine/gui/layout_manager.cpp')
-  
-C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\src\engine\gui\gui_manager.h(21,41): error C2238: unexpected token(s) preceding ';'
-  (compiling source file 'src/engine/gui/layout_manager.cpp')
-  
-C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\src\engine\gui\gui_manager.h(24,15): error C2143: syntax error: missing ';' before '*'
-  (compiling source file 'src/engine/gui/layout_manager.cpp')
-  
-C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\src\engine\gui\gui_manager.h(24,15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-  (compiling source file 'src/engine/gui/layout_manager.cpp')
-  
-C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\src\engine\gui\gui_manager.h(24,32): error C2238: unexpected token(s) preceding ';'
-  (compiling source file 'src/engine/gui/layout_manager.cpp')
-  
-  renderer.h
+  main.cpp
   Generating Code...
+C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\\build\intermediate\Tier2-Engine\x64\Debug\renderer.obj : warning LNK4042: object specified more than once; extras ignored
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  Tier2-Engine.vcxproj -> C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\build\x64\Debug\Tier2-Engine.exe

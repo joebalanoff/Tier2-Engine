@@ -5,8 +5,6 @@
 #include <imgui.h>
 #include <imgui_internal.h>
 
-#include "gui_manager.h"
-
 class LayoutManager {
 public:
 	LayoutManager(GLFWwindow* window);

@@ -13,9 +13,7 @@ int main() {
 	while (!glfwWindowShouldClose(window)) {
 		input.processInput();
 
-		// Logic here
-
-		renderer.render(); // scene?
+		renderer.render();
 
 		glfwSwapBuffers(window);
 		glfwPollEvents();
