@@ -3,8 +3,9 @@ C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\src\core\layer.cpp;C:\User
 C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\src\core\layer_stack.cpp;C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\build\intermediate\Tier2-Engine\x64\Debug\layer_stack.obj
 C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\src\core\window.cpp;C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\build\intermediate\Tier2-Engine\x64\Debug\window.obj
 C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\src\entry.cpp;C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\build\intermediate\Tier2-Engine\x64\Debug\entry.obj
-C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\src\gui\imgui\im_gui_layer.cpp;C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\build\intermediate\Tier2-Engine\x64\Debug\im_gui_layer.obj
-C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\src\platform\windows_window.cpp;C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\build\intermediate\Tier2-Engine\x64\Debug\windows_window.obj
+C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\src\gui\editor_layer.cpp;C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\build\intermediate\Tier2-Engine\x64\Debug\editor_layer.obj
+C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\src\gui\im_gui_layer.cpp;C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\build\intermediate\Tier2-Engine\x64\Debug\im_gui_layer.obj
+C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\src\gui\panels\scene_hierarchy_panel.cpp;C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\build\intermediate\Tier2-Engine\x64\Debug\scene_hierarchy_panel.obj
 C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\vendor\imgui\backends\imgui_impl_glfw.cpp;C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\build\intermediate\Tier2-Engine\x64\Debug\imgui_impl_glfw.obj
 C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\vendor\imgui\backends\imgui_impl_opengl3.cpp;C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\build\intermediate\Tier2-Engine\x64\Debug\imgui_impl_opengl3.obj
 C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\vendor\imgui\imgui.cpp;C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\build\intermediate\Tier2-Engine\x64\Debug\imgui.obj

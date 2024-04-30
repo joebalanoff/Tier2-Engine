@@ -42,25 +42,28 @@
     <ClInclude Include="vendor\imgui\imstb_truetype.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\core\application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="src\core\layer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\core\layer_stack.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\gui\imgui\im_gui_layer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\core\application.h">
+    <ClInclude Include="src\gui\im_gui_layer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\core\window.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\platform\windows_window.h">
+    <ClInclude Include="src\core\base.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\core\base.h">
+    <ClInclude Include="src\gui\editor_layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\panels\scene_hierarchy_panel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -86,25 +89,28 @@
     <ClCompile Include="vendor\imgui\imgui_widgets.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\core\application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="src\core\layer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\core\layer_stack.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\gui\imgui\im_gui_layer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\core\application.cpp">
+    <ClCompile Include="src\gui\im_gui_layer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\core\window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\platform\windows_window.cpp">
+    <ClCompile Include="src\gui\editor_layer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\entry.cpp">
+    <ClCompile Include="src\gui\panels\scene_hierarchy_panel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
