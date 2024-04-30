@@ -1,2 +1,4 @@
-﻿  im_gui_layer.cpp
+﻿  editor_layer.cpp
+  scene_hierarchy_panel.cpp
+  Generating Code...
   Tier2-Engine.vcxproj -> C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\build\x64\Debug\Tier2-Engine.exe

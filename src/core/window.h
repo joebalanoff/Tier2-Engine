@@ -1,34 +1,27 @@
 #pragma once
 
-#include <string>
+#include <cstdio>
+#include <GLFW/glfw3.h>
+
 #include "base.h"
 
+static void GLFW_ERROR_CALLBACK(int error, const char* description) {
+	fprintf(stderr, "GLFW Error %d: %s\n", error, description);
+}
+
 namespace Tier2 {
-	struct WindowProps {
-		std::string title;
-		uint32_t width;
-		uint32_t height;
-
-		WindowProps(const std::string& _title = "Tier2",
-					uint32_t _width = 1600,
-					uint32_t _height = 900
-					) : title(_title), width(_width), height(_height) {}
-	};
-
 	class Window {
 	public:
-		virtual ~Window() = default;
+		Window();
+		~Window() = default;
 
-		virtual void OnUpdate() = 0;
+		uint32_t GetWidth() const;
+		uint32_t GetHeight() const;
 
-		virtual uint32_t GetWidth() const = 0;
-		virtual uint32_t GetHeight() const = 0;
+		void* GetNativeWindow() const { return m_window; }
 
-		virtual void SetVSync(bool enabled) = 0;
-		virtual bool IsVSync() const = 0;
-
-		virtual void* GetNativeWindow() const = 0;
-
-		static Scope<Window> Create(const WindowProps& props = WindowProps());
+		static Scope<Window> CreateWindow();
+	private:
+		GLFWwindow* m_window;
 	};
 }

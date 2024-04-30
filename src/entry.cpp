@@ -1,12 +1,9 @@
 #include "core/application.h"
+using namespace Tier2;
 
 int main() {
-	Tier2::ApplicationSpecification specs;
-	specs.name = "Tier2";
-	Tier2::Application* app = new Tier2::Application(specs);
+	Application* app = new Application();
 
+	app->Init();
 	app->Run();
-
-	delete app;
-	return 0;
 }

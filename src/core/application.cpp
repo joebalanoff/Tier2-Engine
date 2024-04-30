@@ -1,73 +1,50 @@
 #include "application.h"
 
-#include <filesystem>
-#include <iostream>
-
-#include "window.h"
+#include <cstdio>
 
 namespace Tier2 {
 	Application* Application::s_instance = nullptr;
 
-	Application::Application(const ApplicationSpecification& specification) : m_specification(specification) {
-		s_instance = this;
+	Application::Application() : m_window(nullptr), m_imGuiLayer(nullptr), m_editorLayer(nullptr) { }
 
-		if (!m_specification.workingDirectory.empty()) {
-			//std::filesystem::current_path(m_specification.workingDirectory);
-		}
+	Application::~Application() {}
 
-		m_window = Window::Create(WindowProps(m_specification.name));
-		
+	void Application::Init() {
+		m_window = Window::CreateWindow();
+
+		m_layerStack = LayerStack();
+
 		m_imGuiLayer = new ImGuiLayer();
-		PushOverlay(m_imGuiLayer);
-	}
+		m_layerStack.PushLayer(m_imGuiLayer);
 
-	Application::~Application() {
+		m_editorLayer = new EditorLayer();
+		m_layerStack.PushLayer(m_editorLayer);
 
-	}
-
-	void Application::PushLayer(Layer* layer) {
-		m_layerStack.PushLayer(layer);
-		layer->OnAttach();
-	}
-
-	void Application::PushOverlay(Layer* overlay) {
-		m_layerStack.PushOverlay(overlay);
-		overlay->OnAttach();
-	}
-
-	void Application::Close() {
-		m_running = false;
+		GLFWwindow* window = static_cast<GLFWwindow*>(m_window->GetNativeWindow());
+		ImGui_ImplGlfw_InitForOpenGL(window, true);
+		ImGui_ImplOpenGL3_Init("#version 130");
 	}
 
 	void Application::Run() {
-		while (m_running) {
-			if (!m_minimized) {
-				{
-					for (Layer* layer : m_layerStack) {
-						layer->OnUpdate(0); // timestep
-					}
+		GLFWwindow* window = static_cast<GLFWwindow*>(m_window->GetNativeWindow());
+		while (!glfwWindowShouldClose(window)) {
+			glfwPollEvents();
+
+			m_imGuiLayer->Begin();
+			
+			{
+				for (Layer* layer : m_layerStack.m_layers) {
+					layer->OnUpdate();
 				}
 
-				if (m_imGuiLayer->HasBeenInitialized()) {
-					m_imGuiLayer->Begin();
-					{
-						for (Layer* layer : m_layerStack) {
-							layer->OnImGuiRender();
-						}
-					}
-					m_imGuiLayer->End();
+				for (Layer* layer : m_layerStack.m_layers) {
+					layer->OnRender();
 				}
 			}
-			m_window->OnUpdate();
+			
+			m_imGuiLayer->End();
+
+			glfwSwapBuffers(window);
 		}
-	}
-
-	bool Application::OnWindowClose() {
-		m_running = false;
-		return true;
-	}
-
-	bool Application::OnWindowResize() {
-		return false;
 	}
 }

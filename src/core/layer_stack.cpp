@@ -1,6 +1,8 @@
 #include "layer_stack.h"
 
 namespace Tier2 {
+	LayerStack::LayerStack() {}
+
 	LayerStack::~LayerStack() {
 		for (Layer* layer : m_layers) {
 			layer->OnDetach();
@@ -10,11 +12,8 @@ namespace Tier2 {
 
 	void LayerStack::PushLayer(Layer* layer) {
 		m_layers.emplace(m_layers.begin() + m_layerInsertIndex, layer);
+		layer->OnAttach();
 		m_layerInsertIndex++;
-	}
-
-	void LayerStack::PushOverlay(Layer* overlay) {
-		m_layers.emplace_back(overlay);
 	}
 
 	void LayerStack::PopLayer(Layer* layer) {
@@ -23,14 +22,6 @@ namespace Tier2 {
 			layer->OnDetach();
 			m_layers.erase(it);
 			m_layerInsertIndex--;
-		}
-	}
-
-	void LayerStack::PopOverlay(Layer* overlay) {
-		auto it = std::find(m_layers.begin() + m_layerInsertIndex, m_layers.end(), overlay);
-		if (it != m_layers.end()) {
-			overlay->OnDetach();
-			m_layers.erase(it);
 		}
 	}
 }
