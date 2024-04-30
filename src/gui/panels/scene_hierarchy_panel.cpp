@@ -6,6 +6,10 @@ namespace Tier2 {
 	SceneHierarchyPanel::SceneHierarchyPanel() : Layer("") { }
 
 	void SceneHierarchyPanel::OnRender() {
-		ImGui::ShowDemoWindow();
+		ImGui::Begin("Scene Hierarchy");
+
+
+
+		ImGui::End();
 	}
 }
