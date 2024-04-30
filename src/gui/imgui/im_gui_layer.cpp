@@ -6,6 +6,8 @@
 #include <imgui_impl_opengl3.h>
 #include <imgui_impl_glfw.h>
 
+#include <iostream>
+
 namespace Tier2 {
 	ImGuiLayer::ImGuiLayer() : Layer("ImGuiLayer") {}
 
@@ -18,7 +20,7 @@ namespace Tier2 {
 		io.ConfigFlags |= ImGuiConfigFlags_ViewportsEnable;
 
 		float fontSize = 18.0f;
-		io.FontDefault = io.Fonts->AddFontFromFileTTF("../../../assets/fonts/Roboto-Medium.ttf", fontSize);
+		//io.FontDefault = io.Fonts->AddFontFromFileTTF("../../../assets/fonts/Roboto-Medium.ttf", fontSize);
 		
 		ImGui::StyleColorsDark();
 
@@ -33,8 +35,14 @@ namespace Tier2 {
 		Application& app = Application::Get();
 		GLFWwindow* window = static_cast<GLFWwindow*>(app.GetWindow().GetNativeWindow());
 
+		glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+		glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0);
+
 		ImGui_ImplGlfw_InitForOpenGL(window, true);
-		ImGui_ImplOpenGL3_Init("#version 410");
+		ImGui_ImplOpenGL3_Init("#version 130");
+		
+		std::cout << "Test" << std::endl;
+		m_initialized = true;
 	}
 
 	void ImGuiLayer::OnDetach() {
@@ -73,5 +81,9 @@ namespace Tier2 {
 
 	uint32_t ImGuiLayer::GetActiveWidgetID() const {
 		return 0;
+	}
+
+	bool ImGuiLayer::HasBeenInitialized() const {
+		return m_initialized;
 	}
 }

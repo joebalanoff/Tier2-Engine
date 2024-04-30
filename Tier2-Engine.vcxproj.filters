@@ -15,12 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\gui\gui_manager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\gui\layout_manager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="vendor\imgui\backends\imgui_impl_glfw.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -60,9 +54,6 @@
     <ClInclude Include="src\core\application.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\main.cpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\core\window.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -74,12 +65,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\gui\gui_manager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\gui\layout_manager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="vendor\imgui\backends\imgui_impl_glfw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -117,6 +102,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\platform\windows_window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entry.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

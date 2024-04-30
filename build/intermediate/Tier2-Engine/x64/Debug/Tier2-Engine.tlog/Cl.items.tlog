@@ -1,9 +1,10 @@
-C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\src\gui\gui_manager.cpp;C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\build\intermediate\Tier2-Engine\x64\Debug\gui_manager.obj
-C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\src\gui\layout_manager.cpp;C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\build\intermediate\Tier2-Engine\x64\Debug\layout_manager.obj
-C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\src\core\input.cpp;C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\build\intermediate\Tier2-Engine\x64\Debug\input.obj
-C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\src\core\renderer.cpp;C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\build\intermediate\Tier2-Engine\x64\Debug\renderer.obj
-C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\src\core\renderer.h;C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\build\intermediate\Tier2-Engine\x64\Debug\renderer.obj
-C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\src\main.cpp;C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\build\intermediate\Tier2-Engine\x64\Debug\main.obj
+C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\src\core\application.cpp;C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\build\intermediate\Tier2-Engine\x64\Debug\application.obj
+C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\src\core\layer.cpp;C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\build\intermediate\Tier2-Engine\x64\Debug\layer.obj
+C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\src\core\layer_stack.cpp;C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\build\intermediate\Tier2-Engine\x64\Debug\layer_stack.obj
+C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\src\core\window.cpp;C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\build\intermediate\Tier2-Engine\x64\Debug\window.obj
+C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\src\entry.cpp;C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\build\intermediate\Tier2-Engine\x64\Debug\entry.obj
+C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\src\gui\imgui\im_gui_layer.cpp;C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\build\intermediate\Tier2-Engine\x64\Debug\im_gui_layer.obj
+C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\src\platform\windows_window.cpp;C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\build\intermediate\Tier2-Engine\x64\Debug\windows_window.obj
 C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\vendor\imgui\backends\imgui_impl_glfw.cpp;C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\build\intermediate\Tier2-Engine\x64\Debug\imgui_impl_glfw.obj
 C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\vendor\imgui\backends\imgui_impl_opengl3.cpp;C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\build\intermediate\Tier2-Engine\x64\Debug\imgui_impl_opengl3.obj
 C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\vendor\imgui\imgui.cpp;C:\Users\Simon Balanoff\Documents\GitHub\Tier2-Engine\build\intermediate\Tier2-Engine\x64\Debug\imgui.obj

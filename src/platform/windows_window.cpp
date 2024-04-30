@@ -31,7 +31,7 @@ namespace Tier2 {
 		++s_GLFWWindowCount;
 
 		glfwSetWindowUserPointer(m_window, &m_data);
-		SetVSync(true);
+		//SetVSync(true);
 
 		glfwSetWindowSizeCallback(m_window, [](GLFWwindow* window, int width, int height) {
 			WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);

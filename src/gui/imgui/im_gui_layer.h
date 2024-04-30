@@ -18,5 +18,9 @@ namespace Tier2 {
 		void SetDarkThemeColors();
 
 		uint32_t GetActiveWidgetID() const;
+
+		bool HasBeenInitialized() const;
+	private:
+		bool m_initialized = false;
 	};
 }

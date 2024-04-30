@@ -48,13 +48,15 @@ namespace Tier2 {
 					}
 				}
 
-				m_imGuiLayer->Begin();
-				{
-					for (Layer* layer : m_layerStack) {
-						layer->OnImGuiRender();
+				if (m_imGuiLayer->HasBeenInitialized()) {
+					m_imGuiLayer->Begin();
+					{
+						for (Layer* layer : m_layerStack) {
+							layer->OnImGuiRender();
+						}
 					}
+					m_imGuiLayer->End();
 				}
-				m_imGuiLayer->End();
 			}
 			m_window->OnUpdate();
 		}

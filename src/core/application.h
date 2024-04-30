@@ -38,6 +38,7 @@ namespace Tier2 {
 
 		Window& GetWindow() { return *m_window; }
 
+		void Run();
 		void Close();
 
 		ImGuiLayer* GetImGuiLayer() { return m_imGuiLayer; }
@@ -46,7 +47,6 @@ namespace Tier2 {
 
 		const ApplicationSpecification& GetSpecification() const { return m_specification; }
 	private:
-		void Run();
 		bool OnWindowClose();
 		bool OnWindowResize();
 
